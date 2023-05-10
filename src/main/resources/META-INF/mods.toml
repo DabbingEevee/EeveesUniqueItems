@@ -4,7 +4,7 @@ license="All rights reserved"
 [[mods]] #mandatory
 modId="eevees_unique_items" #mandatory
 version="${file.jarVersion}" #mandatory
-displayName="Example Mod" #mandatory
+displayName="Eevee's Unique Items" #mandatory
 logoFile="eevees_unique_items.png" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
