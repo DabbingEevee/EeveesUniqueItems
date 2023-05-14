@@ -1,5 +1,7 @@
 package com.existingeevee.uniqueitems.items;
 
+import com.existingeevee.uniqueitems.CustomCreativeTab;
+
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -16,7 +18,7 @@ public class MobfinderItem extends Item {
 	
 	public MobfinderItem() {
 		//Sets the max stack size to one
-		super(new Properties().stacksTo(1));
+		super(new Properties().stacksTo(1).tab(CustomCreativeTab.TAB));
 	}
 
 	@Override

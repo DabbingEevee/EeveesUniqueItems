@@ -2,6 +2,7 @@ package com.existingeevee.uniqueitems.items;
 
 import javax.annotation.Nullable;
 
+import com.existingeevee.uniqueitems.CustomCreativeTab;
 import com.existingeevee.uniqueitems.EeveesUniqueItems;
 import com.existingeevee.uniqueitems.SimpleCustomItemMessage;
 
@@ -26,7 +27,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 public class DoubleJumpBootsItem extends ArmorItem {
 
 	public DoubleJumpBootsItem() {
-		super(DoubleJumpBootsArmorMaterial.INSTANCE, EquipmentSlot.FEET, new Properties().stacksTo(1));
+		super(DoubleJumpBootsArmorMaterial.INSTANCE, EquipmentSlot.FEET, new Properties().stacksTo(1).tab(CustomCreativeTab.TAB));
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
