@@ -31,8 +31,8 @@ public class DoubleJumpBootsItem extends ArmorItem {
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
-	@OnlyIn(Dist.CLIENT) // Makes this method only there on the client side since thats where keys are
-							// handled
+	@SuppressWarnings("resource")
+	@OnlyIn(Dist.CLIENT) // Makes this method only there on the client side since thats where keys are handled
 	@SubscribeEvent(receiveCanceled = true) // subscribes this event so the event bus knows where to find it
 	public void onKeyEvent(Key event) {
 		if (Minecraft.getInstance().screen == null && Minecraft.getInstance().player != null && !Minecraft.getInstance().player.isOnGround()) {
